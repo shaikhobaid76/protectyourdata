@@ -130,6 +130,11 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
+        .tabs-container {
+         display: flex;
+        gap: 20px;   /* gap adjust kar lo – 8px, 12px, etc. */
+        }
+
         .btn-secondary:hover {
             background: var(--secondary);
             color: var(--dark);
@@ -458,8 +463,9 @@
                 <!-- Tabs -->
                 <div class="tabs-container flex mb-8">
                     <div class="tab active flex-1" data-tab="encrypt">
-                        <i class="fas fa-lock mr-3"></i> Encrypt Message
+                        <i class="fas fa-lock mr-2"></i> Encrypt Message
                     </div>
+                    
                     <div class="tab flex-1" data-tab="decrypt">
                         <i class="fas fa-unlock mr-3"></i> Decrypt Message
                     </div>
