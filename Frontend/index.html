@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Your Data | SHAIKHSPY - Secure Encrypted Messaging</title>
+    <meta name="description" content="SHAIKHSPY Protect Your Data - Secure end-to-end encrypted messaging with screenshot protection. Send private messages & images that self-destruct automatically.">
+   <meta name="keywords" content="encrypted messaging, protect your data, data, protect, secure chat, private messaging, hidden code, SHAIKHSPY, 0xB41D, screenshot protection, secure message app, encrypted messenger online, hide text online, secret message sender, anonymous message app, private messaging tool, data encryption web app, secure file sharing app, online encryption tool, text encoder decoder online, message encryption website, end-to-end encryption app, safe chat web app, digital privacy tools, hide messages in images, send hidden code messages, online steganography tool, encrypt pdf files online, base64 message encoder, online secret message generator, image message encrypter, password protected message sender, secret communication app, hide message with key, encrypt text with emoji, anonymous chat without login, text steganography online, browser based encryption tool, share secret notes online, how to hide messages inside images online, best free encrypted message web app, send hidden messages securely without account, create secret link to share encrypted text, tool to convert message into emoji code, secure anonymous message sharing platform, free web app for hiding text in image, how to encrypt text using base64 and key, best open source secret messenger 2025, hidden code messenger, hidden code app, hidden code encryption tool, hidden code message sender, hidden code file encryption, hidden code messenger vercel app, hidden code messenger obaid shaikh, hidden code secure chat, hidden code pdf encryptor, hidden code image encrypt tool, self-destruct messages">
+    <meta name="author" content="Obaidullah Shaikh">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Hidden Code Messenger | SHAIKHSPY - Secure Encrypted Messaging">
+    <meta property="og:description" content="Send encrypted messages & images with screenshot protection. Messages self-destruct automatically.">
+    <meta property="og:url" content="https://protectyourdata.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://protectyourdata.vercel.app/images/og-image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Protect Your Data | SHAIKHSPY">
+    <meta name="twitter:description" content="Secure encrypted messaging with screenshot protection & auto-delete features">
+    <meta name="twitter:image" content="https://protectyourdata.vercel.app/images/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://protectyourdata.vercel.app/">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Protect Your Data",
+      "url": "https://protectyourdata.vercel.app/",
+      "description": "Secure encrypted messaging platform with screenshot protection and auto-delete features",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Any",
+      "permissions": "microphone, camera",
+      "author": {
+        "@type": "Person",
+        "name": "Obaidullah Shaikh"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="color-dots">
+        <div class="color-dot floating" style="width: 300px; height: 300px; background: var(--primary); top: 10%; left: 5%; animation-delay: 0s;"></div>
+        <div class="color-dot floating" style="width: 250px; height: 250px; background: var(--secondary); top: 60%; right: 10%; animation-delay: 1s;"></div>
+        <div class="color-dot floating" style="width: 200px; height: 200px; background: var(--cream); bottom: 10%; left: 20%; animation-delay: 2s;"></div>
+    </div>
+
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 relative z-10">
+        <!-- Header -->
+        <header class="text-center mb-10 mt-6 bounce-in">
+            <div class="brand-text text-5xl md:text-7xl font-black mb-4">
+                SHAIKHSPY
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-secondary">Protect Your Data</h1>
+            <p class="text-xl text-cream max-w-2xl mx-auto">Securely encrypt messages and images with multiple output formats</p>
+        </header>
+        
+        <!-- Main Container -->
+        <div class="w-full max-w-7xl gradient-card rounded-2xl mb-10 overflow-hidden bounce-in" style="animation-delay: 0.2s;">
+            <div class="p-6 md:p-8 rounded-2xl">
+                <!-- Tabs -->
+                <div class="tabs-container flex mb-8">
+                    <div class="tab active flex-1" data-tab="encrypt">
+                        <i class="fas fa-lock mr-2"></i> Encrypt Message
+                    </div>
+                    
+                    <div class="tab flex-1" data-tab="decrypt">
+                        <i class="fas fa-unlock mr-3"></i> Decrypt Message
+                    </div>
+                </div>
+                
+                <!-- Encrypt Section -->
+                <section id="encrypt-section" class="section">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Input Area -->
+                        <div class="space-y-6">
+                            <!-- Secret Message (Top) -->
+                            <div class="relative">
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-keyboard mr-2"></i>Secret Message </label>
+                                <textarea 
+                                    id="plainText" 
+                                    rows="8" 
+                                    placeholder="Type your secret message here ..." 
+                                    class="textarea-field"
+                                ></textarea>
+                                <div class="watermark">OxB41D</div>
+                            </div>
+                            
+                            <!-- Upload Image -->
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-image mr-2"></i>Upload Image </label>
+                                <div class="file-input-container">
+                                    <label class="file-input-label">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span id="fileInputLabel">Choose an image file...</span>
+                                    </label>
+                                    <input type="file" id="imageInput" accept="image/*">
+                                </div>
+                                <div id="imagePreviewContainer" class="image-preview-container hidden">
+                                    <div class="protected-image-container">
+                                        <img id="imagePreview" class="image-preview no-screenshot" src="" alt="Preview">
+                                        <canvas id="imageCanvas"></canvas>
+                                        <div class="protected-image-overlay" id="imageOverlay">
+                                            <i class="fas fa-shield-alt"></i>
+                                            Screenshot Protected
+                                        </div>
+                                    </div>
+                                    <div id="imageInfo" class="image-info"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Auto-Delete Time (Conditional) -->
+                            <div id="autoDeleteTimeContainer" class="hidden">
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-clock mr-2"></i>Image Auto-Delete Time</label>
+                                <div class="time-selector">
+                                    <select id="deleteTime" class="format-select time-input">
+                                        <option value="1">1 minute</option>
+                                        <option value="2">2 minutes</option>
+                                        <option value="3">3 minutes</option>
+                                        <option value="4">4 minutes</option>
+                                        <option value="5" selected>5 minutes</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Download Option -->
+                                <div class="download-option">
+                                    <div class="download-toggle" id="downloadToggle">
+                                        <div class="toggle-switch" id="toggleSwitch">
+                                            <div class="toggle-slider"></div>
+                                        </div>
+                                        <span class="text-secondary">Allow Download</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Encryption Password (Bottom) -->
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-lock mr-2"></i>Encryption Password</label>
+                                <input 
+                                    id="password" 
+                                    type="password" 
+                                    placeholder="Enter a strong password..." 
+                                    class="input-field"
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Output Area -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-code mr-2"></i>Output Format</label>
+                                <select id="outputFormat" class="format-select">
+                                    <option value="emoji">🎭 Emoji (Fun & Secure)</option>
+                                    <option value="base64">🔢 Base64 (Standard)</option>
+                                    <option value="hex">🔄 Hexadecimal</option>
+                                    <option value="binary">💻 Binary</option>
+                                    <option value="morse">📡 Morse Code</option>
+                                    <option value="braille">⣿ Braille</option>
+                                    <option value="base32">🔤 Base32</option>
+                                    <option value="base58">🔡 Base58</option>
+                                    <option value="ascii85">📊 ASCII85</option>
+                                    <option value="base91">🔣 Base91</option>
+                                    <option value="base92">🔠 Base92</option>
+                                    <option value="base122">🔢 Base122</option>
+                                    <option value="base2048">🔣 Base2048</option>
+                                    <option value="zbase32">🔤 zBase32</option>
+                                    <option value="uuencode">📨 UUEncode</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-shield-alt mr-2"></i>Encrypted Output</label>
+                                <div id="encodedOutput" class="output-box">
+                                    <p class="text-gray-400">Your encrypted message will appear here...</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4">
+                                <button id="encryptBtn" class="btn-primary pulse flex-1 min-w-[160px]">
+                                    <i class="fas fa-key mr-2"></i> Encrypt
+                                </button>
+                                <button id="copyEncodedBtn" class="btn-secondary">
+                                    <i class="fas fa-copy mr-2"></i> Copy
+                                </button>
+                                <button id="clearEncryptBtn" class="btn-secondary">
+                                    <i class="fas fa-broom mr-2"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Decrypt Section -->
+                <section id="decrypt-section" class="section hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Input Area -->
+                        <div class="space-y-6">
+                            <div class="relative">
+                                <label class="block text-secondary mb-3 font-'Orbitron' text-lg"><i class="fas fa-paste mr-2"></i>Encrypted Message</label>
+                                <textarea 
+                                    id="decryptInput" 
+                                    rows="10" 
+                                    placeholder="Paste the encrypted message here..." 
+                                    class="textarea-field"
+                                ></textarea>
+                                <div class="watermark">OxB41D</div>
+                                <button id="pasteBtn" class="paste-btn">
+                                    <i class="fas fa-paste mr-2"></i> Paste from Clipboard
+                                </button>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-unlock mr-2"></i>Decryption Password</label>
+                                <input 
+                                    id="decryptPassword" 
+                                    type="password" 
+                                    placeholder="Enter the decryption password..." 
+                                    class="input-field"
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Output Area -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-code mr-2"></i>Output Format</label>
+                                <select id="decryptFormat" class="format-select">
+                                    <option value="emoji">🎭 Emoji (Fun & Secure)</option>
+                                    <option value="base64">🔢 Base64 (Standard)</option>
+                                    <option value="hex">🔄 Hexadecimal</option>
+                                    <option value="binary">💻 Binary</option>
+                                    <option value="morse">📡 Morse Code</option>
+                                    <option value="braille">⣿ Braille</option>
+                                    <option value="base32">🔤 Base32</option>
+                                    <option value="base58">🔡 Base58</option>
+                                    <option value="ascii85">📊 ASCII85</option>
+                                    <option value="base91">🔣 Base91</option>
+                                    <option value="base92">🔠 Base92</option>
+                                    <option value="base122">🔢 Base122</option>
+                                    <option value="base2048">🔣 Base2048</option>
+                                    <option value="zbase32">🔤 zBase32</option>
+                                    <option value="uuencode">📨 UUEncode</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-secondary mb-3 font-semibold text-lg"><i class="fas fa-file-alt mr-2"></i>Decrypted Message</label>
+                                <div id="decryptedOutput" class="output-box">
+                                    <p class="text-gray-400">Your decrypted message will appear here...</p>
+                                </div>
+                            </div>
+                            
+                            <div id="imageOutputContainer" class="image-preview-container hidden">
+                                <div class="protected-image-container">
+                                    <img id="imageOutput" class="image-preview no-screenshot" src="" alt="Decrypted Image">
+                                    <canvas id="outputCanvas"></canvas>
+                                    <div class="protected-image-overlay" id="outputOverlay">
+                                        <i class="fas fa-shield-alt"></i>
+                                        Screenshot Protected
+                                    </div>
+                                </div>
+                                <div id="imageOutputInfo" class="image-info"></div>
+                                <div class="download-option mt-4">
+                                    <button id="downloadImageBtn" class="download-btn" disabled>
+                                        <i class="fas fa-download mr-2"></i> Download Image
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4">
+                                <button id="decryptBtn" class="btn-primary pulse flex-1 min-w-[160px]">
+                                    <i class="fas fa-unlock mr-2"></i> Decrypt
+                                </button>
+                                <button id="copyDecryptedBtn" class="btn-secondary">
+                                    <i class="fas fa-copy mr-2"></i> Copy
+                                </button>
+                                <button id="clearDecryptBtn" class="btn-secondary">
+                                    <i class="fas fa-broom mr-2"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="text-center mt-8 mb-6 bounce-in" style="animation-delay: 0.4s;">
+            <p class="text-secondary mb-6 text-lg">Made by <span class="text-cream font-bold">OBAIDULLAH SHAIKH</span></p>
+            
+            <div class="flex justify-center mb-8">
+                <a href="https://www.linkedin.com/in/obaidullah-shaikh/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/shaikhobaid76" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/official_mr_obaid/?igsh=MTN4MmZxaGNvbGduMQ%3D%3D#" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/shaikhobaid76?share_id=o2f1wAna4_8&locale=en-US" target="_blank" class="social-icon">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+            </div>
+            
+            <p class="text-sm text-cream max-w-2xl mx-auto">
+                Encryption tool encrypt your messages and images with multiple output formats.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
