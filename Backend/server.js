@@ -160,6 +160,6 @@ app.get('/api/images', async (req, res) => {
 // Start server
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`🚀 Server running on port ${PORT}`);
-    console.log(`📱 Health check: http://localhost:${PORT}/api/health`);
+    console.log(`📱 Health check: https://protectyourdata-backend-1.onrender.com/api/health`);
     console.log(`📍 Server accessible from: http://0.0.0.0:${PORT}`);
 });

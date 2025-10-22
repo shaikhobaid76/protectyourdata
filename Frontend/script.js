@@ -12,7 +12,7 @@ const EMOJI_ALPHABET = [
 ];
 
 // MongoDB Configuration
-const API_BASE_URL = "https://protectyourdata-backend.onrender.com/";
+const API_BASE_URL = "http://localhost:5000/api";
 
 // Create emoji mappings
 const emojiMap = {};
@@ -399,7 +399,7 @@ function showDecryptedImage(imageData, displayTime, allowDownloadFlag, fileName)
     displayExpiryTime.setMinutes(displayExpiryTime.getMinutes() + parseInt(displayTime));
     const remainingDisplayTime = Math.max(0, Math.floor((displayExpiryTime - new Date()) / 1000 / 60));
     
-    document.getElementById('imageOutputInfo').textContent = `Image will disappear in ${remainingDisplayTime} minutes (Database auto-delete: 2 hours)`;
+    document.getElementById('imageOutputInfo').textContent = `Image will disappear in ${remainingDisplayTime} minutes `;
     
     // Setup screenshot protection for the decrypted image
     setTimeout(() => {
