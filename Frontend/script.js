@@ -12,7 +12,7 @@ const EMOJI_ALPHABET = [
 ];
 
 // MongoDB Configuration
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://protectyourdata-backend-1.onrender.com/api/health";   //http://localhost:5000/api
 
 // Create emoji mappings
 const emojiMap = {};
@@ -411,7 +411,7 @@ function showDecryptedImage(imageData, displayTime, allowDownloadFlag, fileName)
     imageExpiryTimer = setTimeout(() => {
         document.getElementById('imageOutputContainer').classList.add('hidden');
         currentDecryptedImage = null;
-        setStatus(`Image hidden after ${displayTime} minutes (Still in database for 2 hours total)`, "info");
+        setStatus(`Image time ${displayTime} min is expire`, "info");
     }, parseInt(displayTime) * 60 * 1000);
 }
 
