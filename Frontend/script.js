@@ -12,7 +12,9 @@ const EMOJI_ALPHABET = [
 ];
 
 // MongoDB Configuration
-const API_BASE_URL = "https://protectyourdata-backend-1.onrender.com/api/health";   //http://localhost:5000/api
+const API_BASE_URL = "https://protectyourdata-backend-1.onrender.com/api";
+   //http://localhost:5000/api
+
 
 // Create emoji mappings
 const emojiMap = {};
